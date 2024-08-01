@@ -1,0 +1,12 @@
+ R←Test_AskForNumber_005(stopFlag batchFlag);⎕TRAP;question
+⍝ Exercise "AskForNumber" with a question that carries an "@" but is not an alias
+ ⎕TRAP←(999 'C' '. ⍝ Deliberate error')(0 'N')
+ R←T._Failed
+
+ 0 0⍴⍞,0/⍞←'This test needs you:',(⎕UCS 10),'Answer "How many copies" with a "1"; to continue press <enter>'
+
+ question←'---- Attention @ ---',LF,'How many'
+ →T.PassesIf 1≡({1}C.AskForNumber)question
+
+ R←T._OK
+⍝Done

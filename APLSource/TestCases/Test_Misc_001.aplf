@@ -1,0 +1,11 @@
+ R←Test_Misc_001(stopFlag batchFlag);⎕TRAP;expected;result
+⍝ Exercise "Public"
+ ⎕TRAP←(999 'C' '. ⍝ Deliberate error')(0 'N')
+ R←T._Failed
+
+ expected←'AskForText' 'AskForNumber' 'Select' 'YesOrNo' 'Pause' 'Cleanup' 'Help'
+ result←C.Public
+ →T.PassesIf expected≡result
+
+ R←T._OK
+⍝Done

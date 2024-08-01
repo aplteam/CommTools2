@@ -1,0 +1,13 @@
+ R←Test_Misc_002(stopFlag batchFlag);⎕TRAP
+⍝ Exercise "Cleanup"
+ ⎕TRAP←(999 'C' '. ⍝ Deliberate error')(0 'N')
+ R←T._Failed
+
+ C.YesOrNo_Answers←1 2⍴'foo' 'Y'
+ C.Select_Choices←1 2⍴'foo' 1
+ C.Assert 2=+/2=⊃∘C.⎕NC¨'YesOrNo_Answers' 'Select_Choices'
+ C.Cleanup
+ →T.PassesIf 2=+/0=⊃∘C.⎕NC¨'YesOrNo_Answers' 'Select_Choices'
+
+ R←T._OK
+⍝Done

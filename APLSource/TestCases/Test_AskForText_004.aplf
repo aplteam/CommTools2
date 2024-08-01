@@ -1,0 +1,13 @@
+ R←Test_AskForText_004(stopFlag batchFlag);⎕TRAP;res;q;question
+⍝ Exercise "AskForText" with a question carrying an @ char that is NOT an alias
+ ⎕TRAP←(999 'C' '. ⍝ Deliberate error')(0 'N')
+ R←T._Failed
+
+ 0 0⍴⍞,0/⍞←'This test needs you:',(⎕UCS 10),'Answer "Name" with a "Stan"; to continue press <enter>'
+
+ question←'This is not an @ alias!',LF,'Enter a name'
+ →T.PassesIf'Stan'≡({1}C.AskForText)question
+
+ R←T._OK
+
+⍝Done
