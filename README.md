@@ -1,5 +1,7 @@
 # CommTools2
 
+> ## **This is a repository that will be used for demonstration purposes. It exists only temporarily!**
+
 Basic communication tools for the session, mainly used by user commands and test cases.
 
 ## Overview
