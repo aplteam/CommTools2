@@ -7,10 +7,8 @@
      →0,R←T._NoBatchTest
  :EndIf
 
- 0 0⍴⍞,0/⎕←'This test needs you: when asked a question just press <enter>; to continue press <enter>'
-
  C.AskForText_Answers←1 2⍴'' 1
- →T.GoToTidyUp 0≠≢({1}C.AskForText)'Enter your name'
+ →T.GoToTidyUp 0≠≢({1}C.AskForText)'Enter your name (just press <enter>)'
 
  R←T._OK
 
