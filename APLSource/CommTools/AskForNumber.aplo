@@ -7,6 +7,10 @@
 ⍝ If the user refuses to enter a number an empty vector is returned.
 ⍝ However, you might prevent this from happening by specifying a 1 as `⍺` (`enforce`), meaning that
 ⍝ the user must enter a number in order to continue.
+ :If '?'≡question
+     value←(⍕⎕THIS),'.AskForNumber_Answers←1 2⍴'' ''  '' '''
+     :Return
+ :EndIf
  enforce←{0<⎕NC ⍵:⍎⍵ ⋄ 0}'enforce'
  value←⍬
  success←flag←0

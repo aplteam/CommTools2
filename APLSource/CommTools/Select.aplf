@@ -11,6 +11,10 @@
 ⍝  * If the user aborts by entering "q" (for "quit") `⍬` will be returned
 ⍝ You can make `Select` select none, one or several choices automatically, refer to the documentation
 ⍝ with ]ADoc CommTools\\
+ :If '?'≡choices
+     index←(⍕⎕THIS),'.Select_Choices←1 2⍴'' ''  '' '''
+     :Return
+ :EndIf
  x←{0<⎕NC ⍵:⊆⍎⍵ ⋄ ''}'x'
  (caption manyFlag mustFlag)←x,(⍴,x)↓'' 0 0
  '"caption" must be a simple character vector'Assert 1=≡caption←,caption

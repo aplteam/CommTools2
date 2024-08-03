@@ -9,6 +9,10 @@
  ⍝ You can make `YesOrNo` answer the question automatically, refer to the documentation
  ⍝ with ]ADoc CommTools\\
  ⍝ Note that this function does **not** work as intended when traced!
+ :If '?'≡question
+     yesOrNo←(⍕⎕THIS),'.YesOrNo_Answers←0 2⍴'' '''
+     :Return
+ :EndIf
  isOkay←0
  default←{0<⎕NC ⍵:⍎⍵ ⋄ ''}'default'
  isOkay←0
