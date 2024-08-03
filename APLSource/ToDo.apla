@@ -1,0 +1,4 @@
+(
+ '* Introduce a function ∆Pause into #.CommTools.TestCases'
+ '* Replace 0 0⍴⍞,0/⍞←'... in #.CommTools.TestCases by ∆Pause'
+)
