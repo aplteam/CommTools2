@@ -8,7 +8,7 @@
  :EndIf
 
  {}'to-be-ignored@Choose the first one:'C.Select⍕¨⍳2
- :If C.YesOrNo'Was the caption just "Choose the first one" (without "to-be-ignored") ?'
+ :If C.YesOrNo'>>> Was the caption just "Choose the first one" (without "to-be-ignored") ?'
      R←T._OK
  :EndIf
 ⍝Done

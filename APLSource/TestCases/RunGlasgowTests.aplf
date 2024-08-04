@@ -1,0 +1,8 @@
+ RunGlasgowTests;buff;list
+ buff←⎕SE.Latest.Run'' 1 0 0 ¯1 0
+ list←{⍵[;1]}1⊃buff
+ list/⍨←('#.CommTools.TestCases.Test_'{⍺∘≡¨(≢⍺)↑¨⍵}list)
+ list←{⍵↑⍨1+-'.'⍳⍨⌽⍵}¨list
+ list←(≢'Test_')↓¨list
+ T.RunThese list
+⍝Done
