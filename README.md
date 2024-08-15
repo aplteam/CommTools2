@@ -21,12 +21,12 @@ These functions and operators have three features in common:
 
   This allows you to automate tests that would otherwise require a human to interact with.
 
-`AskForNumber` and `AskForText` are operators that require a check function as left operand, allowing to check the input, and rejecting or accepting it.
+`AskForNumber` and `AskForText` are operators that require a check function as the left operand. They allow checking the input and rejecting or accepting it.
 
 ## Documentation
 
-You may ask for a detailed documentation with
+You may ask for detailed documentation with
 
 ```
-      ]ADoc #.CommTools2
+      ]ADoc #.CommTools
 ```
