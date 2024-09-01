@@ -1,6 +1,6 @@
 # CommTools2
 
-> ## **This is a repository that will be used for demonstration purposes. It exists only temporarily!**
+> ## **This is a repository that is used for demonstration purposes only.<br>It exists only temporarily!**
 
 Basic communication tools for the session, mainly used by user commands and test cases.
 
@@ -21,12 +21,12 @@ These functions and operators have three features in common:
 
   This allows you to automate tests that would otherwise require a human to interact with.
 
-`AskForNumber` and `AskForText` are operators that require a check function as left operand, allowing to check the input, and rejecting or accepting it.
+`AskForNumber` and `AskForText` are operators that require a check function as the left operand. They allow checking the input and rejecting or accepting it.
 
 ## Documentation
 
-You may ask for a detailed documentation with
+You may ask for detailed documentation with
 
 ```
-      ]ADoc #.CommTools2
+      ]ADoc #.CommTools
 ```
